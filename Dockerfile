@@ -15,7 +15,7 @@ RUN curl -sL https://deb.nodesource.com/setup_8.x | bash - && \
 USER jovyan
 
 ENV GOPATH $HOME/go
-ENV LGOPATH $HOME/lgo
+ENV LGOPATH $HOME/go
 ENV PATH $PATH:/usr/local/go/bin:$GOPATH/bin:/usr/lib/go-1.10/bin
 WORKDIR ${HOME}
 
